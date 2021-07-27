@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "8ad5d932-0a37-4d2f-8804-3f82031381ce",
+		"name": "Employee App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee App home",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"swagger-ui",
+						"index.html"
+					],
+					"query": [
+						{
+							"key": "configUrl",
+							"value": "/v3/api-docs/swagger-config"
+						}
+					],
+					"hash": "/"
+				},
+				"description": "Get page and number of entries"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8888/employees/1\n",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "password",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/employees/1\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"employees",
+						"1\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "011Feladat Employee collection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888"
+				},
+				"description": "FFirst  "
+			},
+			"response": []
+		}
+	]
+}
