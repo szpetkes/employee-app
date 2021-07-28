@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "8ad5d932-0a37-4d2f-8804-3f82031381ce",
+		"name": "Employee App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "015Feladat Employee collection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888"
+				},
+				"description": "FFirst  "
+			},
+			"response": []
+		},
+		{
+			"name": "Employees Job Description In",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"string0\",\r\n    \"description\": \"string0\",\r\n    \"addedAt\": \"2021-07-28T11:14:48.576Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/jobdescriptions/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"jobdescriptions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employees Job Description List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"string2\",\r\n    \"jobDescriptionId\": 2,\r\n    \"firstName\": \"string2\",\r\n    \"lastName\": \"string2\",\r\n    \"middleName\": \"string2\",\r\n    \"emailId\": \"string2\",\r\n    \"dayOfBirth\": \"2021-07-27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/jobdescriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"jobdescriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employees In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"string1\",\r\n    \"jobDescriptionId\": 1,\r\n    \"firstName\": \"string1\",\r\n    \"lastName\": \"string1\",\r\n    \"middleName\": \"string1\",\r\n    \"emailId\": \"string1\",\r\n    \"dayOfBirth\": \"2021-07-28\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employees/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"string\",\r\n    \"jobDescriptionId\": 1,\r\n    \"firstName\": \"string\",\r\n    \"lastName\": \"string\",\r\n    \"middleName\": \"string\",\r\n    \"emailId\": \"string\",\r\n    \"dayOfBirth\": \"2021-07-27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employees/{id} Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"userName\": \"tjozsa2\",\r\n    \"jobDescriptionId\": 2,\r\n    \"firstName\": \"Tamas\",\r\n    \"lastName\": \"Jozsa\",\r\n    \"middleName\": \"N/A\",\r\n    \"emailId\": \"tjozsa@example.com\",\r\n    \"dayOfBirth\": \"2021-07-27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/employees/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"employees",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employees/{id} Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"userName\": \"tjozsa2\",\r\n    \"jobDescriptionId\": 1,\r\n    \"firstName\": \"Tamas\",\r\n    \"lastName\": \"Jozsa\",\r\n    \"middleName\": \"N/A\",\r\n    \"emailId\": \"tjozsa@example.com\",\r\n    \"dayOfBirth\": \"2021-07-27\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/employees/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"employees",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "password",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
