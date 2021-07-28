@@ -21,6 +21,18 @@
 		},
 		{
 			"name": "Employee Jobdescription Add",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"pm.environment.set(\"jobdescription_id\", jsonData.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -48,9 +60,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}{{jobdescription_url}}4",
+					"raw": "{{url}}{{jobdescription_url}}{{jobdescription_id}}",
 					"host": [
-						"{{url}}{{jobdescription_url}}4"
+						"{{url}}{{jobdescription_url}}{{jobdescription_id}}"
 					]
 				}
 			},
@@ -71,9 +83,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}{{jobdescription_url}}4",
+					"raw": "{{url}}{{jobdescription_url}}{{jobdescription_id}}",
 					"host": [
-						"{{url}}{{jobdescription_url}}4"
+						"{{url}}{{jobdescription_url}}{{jobdescription_id}}"
 					]
 				}
 			},
@@ -94,9 +106,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}{{jobdescription_url}}4",
+					"raw": "{{url}}{{jobdescription_url}}{{jobdescription_id}}",
 					"host": [
-						"{{url}}{{jobdescription_url}}4"
+						"{{url}}{{jobdescription_url}}{{jobdescription_id}}"
 					]
 				}
 			},
@@ -108,9 +120,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}{{jobdescription_url}}4",
+					"raw": "{{url}}{{jobdescription_url}}{{jobdescription_id}}",
 					"host": [
-						"{{url}}{{jobdescription_url}}4"
+						"{{url}}{{jobdescription_url}}{{jobdescription_id}}"
 					]
 				}
 			},
