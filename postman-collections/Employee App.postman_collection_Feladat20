@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "50e5cfad-49dc-4388-bda2-1f7cc32be8a2",
+		"name": "Employee Jobdescription",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee Jobdescription Get list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}{{jobdescription_url}}",
+					"host": [
+						"{{url}}{{jobdescription_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Jobdescription Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"{{title}}\",\r\n    \"description\": \"{{description}}\",\r\n    \"addedAt\": \"2021-07-28T16:13:35.412Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}{{jobdescription_url}}",
+					"host": [
+						"{{url}}{{jobdescription_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Jobdescription Check Delete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}{{jobdescription_url}}4",
+					"host": [
+						"{{url}}{{jobdescription_url}}4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Jobdescription Change",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"{{title}}\",\r\n    \"description\": \"{{description}}\",\r\n    \"addedAt\": \"2021-07-28T16:18:12.816Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}{{jobdescription_url}}4",
+					"host": [
+						"{{url}}{{jobdescription_url}}4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Jobdescription Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"{{title}}\",\r\n    \"description\": \"{{description}}\",\r\n    \"addedAt\": \"2021-07-28T16:18:12.816Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}{{jobdescription_url}}4",
+					"host": [
+						"{{url}}{{jobdescription_url}}4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Jobdescription Check Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}{{jobdescription_url}}4",
+					"host": [
+						"{{url}}{{jobdescription_url}}4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "password",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
